@@ -1,1 +1,38 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster Wall</title>
+    <style>
+        .movie-wall {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .movie-poster {
+            width: 200px;
+            text-align: center;
+        }
+        .movie-poster img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .movie-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Poster Wall</h1>
+    <div id="movies" class="movie-wall">
+        <!-- Movie posters will be dynamically inserted here by JavaScript -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
