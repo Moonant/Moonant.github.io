@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch movies from movies.json
 
-    fetch('./movie/movie_by_wa.json')
+    fetch('../movie/movie_by_wa.json')
         .then(response => response.json())
         .then(movies => {
             // Sort movies by release date (newest first)
