@@ -1,49 +1,48 @@
+<!-- set https://images.unsplash.com/photo-1502672260266-1c1ef2d93688 as background image -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Poster Wall</title>
+    <title>Document</title>
     <style>
-        .movie-wall {
+        body {
+            background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
             justify-content: center;
+            align-items: center;
         }
-        .movie-poster {
-            width: 200px;
-            text-align: center;
-        }
-        .movie-poster img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .movie-title {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .hidden {
-            display: none;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+
+        .card-button {
+            background-color: rgba(255, 255, 255, 0.8);
             color: #333;
-            font-size: 2.5em;
-            font-weight: bold;
-            text-transform: uppercase;
+            padding: 30px 50px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .card-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
-    <h1>Woody Allen Movies</h1>
-    <div id="movies" class="movie-wall">
-        <!-- Movie posters will be dynamically inserted here by JavaScript -->
-    </div>
-
-    <script src="index.js"></script>
+    <a href="movie.html" class="card-button">
+        <h2>Movie Page</h2>
+        <p>Click to explore</p>
+    </a>
 </body>
 </html>
